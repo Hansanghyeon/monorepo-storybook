@@ -1,0 +1,20 @@
+{
+  "name": "littlebutton",
+  "version": "1.0.0",
+  "description": "toy project",
+  "main": "index.js",
+  "author": "Rob Levin",
+  "license": "MIT",
+  "private": true,
+  "workspaces":  ["littlebutton-react", "littlebutton-vue", "littlebutton-svelte", "littlebutton-angular"],
+  "scripts": {
+    "start:react": "yarn workspace littlebutton-react dev",
+    "start:vue": "yarn workspace littlebutton-vue dev",
+    "start:svelte": "yarn workspace littlebutton-svelte dev",
+    "start:angular": "yarn workspace littlebutton-angular start",
+    "sync:react": "yarn workspace littlebutton-react syncStyles",
+    "sync:vue": "yarn workspace littlebutton-vue syncStyles",
+    "sync:svelte": "yarn workspace littlebutton-svelte syncStyles",
+    "sync:angular": "yarn workspace littlebutton-angular syncStyles"
+  }
+}
